@@ -23,19 +23,16 @@ public class telefon {
     private int telefon_boy;
     private Double telefon_en;
     private int telefon_agirlik;
-    private List<telefonRenk> renk;
+    private String telefon_renk;
     private telefonBatarya batarya;
-   
+    private telefonEkran ekran;
     private telefonIslemci islemci;
     private telefonIsletimSistemi isletimSistemi;
+    private List<telefonKamera> kamera;
     
 
     public telefon() {
     }
-
-   
-
-   
 
     public telefonIsletimSistemi getIsletimSistemi() {
         return isletimSistemi;
@@ -53,7 +50,13 @@ public class telefon {
         this.islemci = islemci;
     }
 
-   
+    public telefonEkran getEkran() {
+        return ekran;
+    }
+
+    public void setEkran(telefonEkran ekran) {
+        this.ekran = ekran;
+    }
 
     public Long getTelefon_id() {
         return telefon_id;
@@ -135,6 +138,14 @@ public class telefon {
         this.telefon_agirlik = telefon_agirlik;
     }
 
+    public String getTelefon_renk() {
+        return telefon_renk;
+    }
+
+    public void setTelefon_renk(String telefon_renk) {
+        this.telefon_renk = telefon_renk;
+    }
+
     public telefonBatarya getBatarya() {
         return batarya;
     }
@@ -143,12 +154,13 @@ public class telefon {
         this.batarya = batarya;
     }
 
-    public List<telefonRenk> getRenk() {
-        return renk;
+    public List<telefonKamera> getKamera() {
+        return kamera;
     }
 
-    public void setRenk(List<telefonRenk> renk) {
-        this.renk = renk;
+    public void setKamera(List<telefonKamera> kamera) {
+        this.kamera = kamera;
     }
 
+    
 }
